@@ -12,7 +12,7 @@ class TestAdd(unittest.TestCase):
         """
         data = [1, 2, 3]
         result = add(data)
-        self.assertEqual(result, 5)
+        self.assertEqual(result, 6)
 
 
 if __name__ == '__main__':
