@@ -26,6 +26,9 @@ jobs:
         uses: peter-evans/autopep8@v1
         with:
           args: --recursive --in-place --aggressive --aggressive .
+      - name: Show code coverage test
+        run: |
+          converage report -m
       - name: Test with unittest
         run: |
           python -m unittest discover tests
