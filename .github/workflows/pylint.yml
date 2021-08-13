@@ -26,7 +26,6 @@ jobs:
         uses: peter-evans/autopep8@v1
         with:
           args: --recursive --in-place --aggressive --aggressive .
-
       - name: Test with unittest
         run: |
           python -m unittest discover tests
